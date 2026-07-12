@@ -1,11 +1,8 @@
 const Sequelize = require('sequelize');
 
-const db = new Sequelize('zomato', 'root', 'Sketch#2468', {
-  host: 'localhost',
+const db = new Sequelize('mysql://root:zEONqJcsCnJQqhTMLUOlxNSGcGrNkpoo@mysql.railway.internal:3306/railway', {
   dialect: 'mysql',
   logging: false,
 });
-
- 
 
 module.exports = db;
